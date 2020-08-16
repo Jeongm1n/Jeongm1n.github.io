@@ -2,7 +2,6 @@ remote_theme:       TaylanTatli/Moon
 
 # Site
 title:              Jeongmin's blog
-bio:                ''
 description:        "조정민의 블로그에 오신 것을 환영합니다."
 reading_time:       true
 words_per_minute:   200
@@ -42,7 +41,7 @@ disqus_shortname:   taylantatli
 email:              qll4359@naver.com
 #twitter:           username
 facebook:           profile.php?id=100012240100710
-github-url:         https://github.com/jeongm1n
+github-url:         jeongm1n
 #stackoverflow:     123456/username   from a "http://stackoverflow.com/users/123456/username" link
 #linkedin:          username
 #xing:              username
