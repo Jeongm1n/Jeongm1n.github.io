@@ -11,6 +11,10 @@ tiled_bg:           false   # Set this true if you want to tile your background 
 locale:             en_US
 url:                https://Jeongm1n.github.io
 
+# disqus
+disqus_url : qll4359@naver.com
+disqus_id : Jeongm1n
+
 # Jekyll
 permalink:          /:title/
 markdown:           kramdown
