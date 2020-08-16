@@ -27,8 +27,7 @@ sass:
   style:            compressed
 
 # Comments
-disqus_url:        qll4359@naver.com
-disqus_id:         Jeongm1n
+disqus_shortname: jeongm1n-github-io
 
 # Social
 # if you don't have any of social below, comment the line.
