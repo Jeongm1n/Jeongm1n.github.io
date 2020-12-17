@@ -1,63 +1,29 @@
-# Build settings
-permalink: /blog/:year/:title/
+# top level stuff you probably don't need to touch
+highlighter: rouge
 markdown: kramdown
-highlighter: pygments
-plugins: [jekyll-paginate-v2]
+rdiscount:
+  extensions: [smart]
+permalink: /:title.html
+paginate: 5
+plugins: [jekyll-paginate]
+port: 3000
+safe: true
 
-pagination:
-  enabled: true
-  per_page: 3
-  permalink: "/page/:num/"
-
-comments: true
-
-source: source
-destination: _site
-sass:
-  sass_dir: _sass
-  style: compressed # expanded
-
-# SEO settings
-title: Jeongmin's blog
-description: "A free Jekyll theme for download"
-keywords: "Jekyll, theme, free, download, SEO, blog, web"
-url: https://Jeongm1n.github.io
+# edit here to achieve your personal greatness
+url: http://Jeongm1n.github.io/
 baseurl:
+title: Jeongmin's blog
+author: Jeongmin
+description: "조정민의 블로그에 오신 것을 환영합니다."
+avatar: profile.png
+email: qll4359@email.com
+github: Jeongm1n # username
+#twitter: username
+#linkedin: username
+#stackoverflow: username   #e.g: users/2735833/proton1h1
+#Comment out if you don't want disqus
+disqus: https-jeongm1n-github-io
+google_analytics: UA-69391421-1
 
-google_analytics: UA-52446115-1
-repo: http://github.com/nandomoreirame/end2end
-disqus_shortname: "https-jeongm1n-github-io"
-disqus_site_shortname: ""
-
-# Author settings
-author:
-  name: Fernando Moreira
-  job: Frontend Engineer
-  bio: "Enthusiast performance, responsive design and usability, always looking for the best project and good coffee."
-  thumb: /images/author.jpg
-  email: qll4359@gmail.com
-  url: https://Jeongm1n.github.io
-  github: Jeongm1n
-  #twitter:
-  facebook: profile.php?id=100012240100710
-  #linkedin: https://linkedin.com/in/nandomoreirame
-
-# navbar pages
-navbar:
-  - slug: about
-    title: About
-  - slug: icons
-    title: Icons
-  - slug: blog
-    title: Blog
-
-exclude:
-  [
-    "config.rb",
-    "src",
-    "Gemfile",
-    "Gemfile.lock",
-    "package.json",
-    "README.md",
-    "Rakefile",
-  ]
+# needed for travis-ci build
+exclude: [vendor]
