@@ -13,7 +13,9 @@ layout: layout
 		{{ page.date | date: "%B %e, %Y" }}
 			&nbsp;&nbsp;
 			{% for tag in page.tags %}
-			 <span class="label label-success">{{ tag }}</span>
+				{% if site.data.tags contains tag %}
+			 		<span class="label label-success">{{ site.data.format[tag] }}</span>
+				{% endif %}
 			{% endfor %}
 		</h4>
 	</div>

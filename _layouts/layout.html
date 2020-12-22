@@ -58,5 +58,24 @@
     <script src="{{ site.baseurl }}static/js/main.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="{{ site.baseurl }}static/js/ie10-viewport-bug-workaround.js"></script>
+    <script>
+        const veve='asdf';
+        function filterByTagName(tagName) {
+        $('.hidden').removeClass('hidden');
+        $('.row').each((index, elem) => {
+            if (!elem.hasAttribute(`data-${tagName}`)) {
+            $(elem).addClass('hidden');
+            }
+        });
+        $(`.tag`).removeClass('selected');
+        $(`.tag[data-tag=${tagName}]`).addClass('selected');
+      }
+      $(document).ready(function(){
+        $("[data-tag]").click((e) => {
+        currentTag = e.target.dataset.tag;
+        filterByTagName(currentTag);
+        })
+      });
+    </script>
   </body>
 </html>
