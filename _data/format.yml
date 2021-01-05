@@ -3,5 +3,6 @@ post: Post
 springboot: SpringBoot
 backend: Backend
 blog: Blog
+algorithm: Algorithm
 ---
 
